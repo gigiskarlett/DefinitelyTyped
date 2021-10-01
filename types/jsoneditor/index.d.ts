@@ -393,7 +393,7 @@ export interface JSONEditorOptions {
     /**
      * Set a callback function that will be triggered when an event will occur in a JSON field or value. Only applicable when mode is 'form', 'tree' or 'view'.
      */
-    onEvent?: ((node: EditableNode, event: string) => void) | undefined;
+    onEvent?: ((node: EditableNode, event: MouseEvent) => void) | undefined;
     /**
      * When true, values containing a color name or color code will have a color picker rendered on their left side.
      * @default true

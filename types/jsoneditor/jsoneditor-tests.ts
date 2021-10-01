@@ -21,6 +21,7 @@ options = {
     onEditable(node: EditableNode | {}) {
         return true;
     },
+    onEvent(node: EditableNode, event: MouseEvent) {},
     onError(error: Error) {},
     onModeChange(newMode: JSONEditorMode, oldMode: JSONEditorMode) {},
     onValidate: json => [],
